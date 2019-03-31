@@ -1,10 +1,256 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
         <title>annamatusewicz.me</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        A webpage
-    </body>
+        <link rel="stylesheet" href="#">
+  </head>
+  <body class="homepage">
+
+    <header class="not-scrolled">
+      <div class="banner active" style="opacity: 1; top: 0px; display: block;">
+        <div class="box">
+          <div class="box-inner" style="visibility: visible;"></div>
+        </div>
+      </div>
+      <nav id="nav-logged-out" class="navbar">
+        <div class="container">
+          <div class="navbar-header ">
+            <button type="button" class="basic-logged-out navbar-toggle collapsed nav-btn" data-toggle="collapse" data-target="#collapsed-nav-logged-out">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      
+            <!-- make sure logo goes to correct location -->
+            <a id="home-hero" class="navbar-brand hidden-lg hidden-md" href="/">
+                <div class="logo-container logged-out">
+                    <!--img src="images/rose.jpeg"-->
+                </div>
+            </a>
+            
+            <div class="nav-links hidden-xs">
+              <ul id="menu-the-main-nav" class="nav navbar-nav">
+                <li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom">
+                  <a class="nav-tab" id="menu-link" href="#">Home</a>
+                </li>
+                <li id="menu-item-1891" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a class="nav-tab" id="meal-plans-link" href="#">Projects</a>
+                </li>
+                <li id="menu-item-1892" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a class="nav-tab" id="values-link" href="#">Adventures</a>
+                </li>
+                <li id="menu-item-1893" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a class="nav-tab" id="learn-link" href="#">About me</a>
+                </li>
+                <li id="menu-item-1894" class="menu-item menu-item-type-post_type menu-item-object-page">
+                  <a class="nav-tab" id="learn-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- mobile collapsed menu items -->
+            <div class="collapse navbar-collapse" id="collapsed-nav-logged-out">
+              <div class="visible-xs">								
+                <ul id="menu-the-main-nav-mobile" class="visible-xs navbar-nav navbar-right mobile-nav-logged-out">
+                  <li id="menu-item-297" class="divider-bottom">
+                    <a class="nav-tab has-divider menu-item menu-item-type-custom menu-item-object-custom" role="menuitem" tabindex="-1" id="btnMyMenu" href="#">Home</a>
+                  </li>
+                  <li id="menu-item-1896" class="divider-bottom">
+                    <a class="nav-tab has-divider menu-item menu-item-type-post_type menu-item-object-page" role="menuitem" tabindex="-1" href="#">Projects</a>
+                  </li>
+                  <li id="menu-item-1897" class="divider-bottom">
+                    <a class="nav-tab has-divider menu-item menu-item-type-post_type menu-item-object-page" role="menuitem" tabindex="-1" id="values-link" href="#">Adventures</a>
+                  </li>
+                  <li id="menu-item-1898" class="divider-bottom">
+                    <a class="nav-tab has-divider menu-item menu-item-type-post_type menu-item-object-page" role="menuitem" tabindex="-1" id="learn-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- center logo for desktop -->
+            <div class="nav-links">
+              <a id="home-hero" class="navbar-brand hidden-xs hidden-sm logo-center " href="/">
+                <div class="logo-container logged-out">
+                  <img src="images/rose.jpeg">
+                </div> 
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="page-wrapper">
+      <div class="clearfix"></div>
+      <div id="page-content">
+    
+        <section id="home-hero">
+          <div class="hero-container fall main">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1>Welcome!</h1>
+                  <p class="subhead">This is my brand new website
+                    <span class="hidden-xs"><br>Come see what I'm up to!</span>
+                  </p>
+                  <a href="#" class="btn btn-primary btn-lg" id="" target="">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="projects" id="howItWorks">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2><span class="MetroScript">Projects</span> and such</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div id="learn-steps" class="verbose">
+                <div class="col-sm-4"><img src="images/rose.jpeg" data-rjs="2" alt="" class=""><h4 class="text-lg">Easy, Delicious Recipes</h4>
+              <ul><li><p>Paleo, Lean &amp; Clean, Gluten-Free, Vegan, Vegetarian, Pescatarian, Mediterranean, and Family options</p></li><li><p>Choose any recipe you like from 18 weekly options</p></li><li><p>Meals are ready in about 30 minutes, no grocery shopping required</p></li></ul></div><div class="col-sm-4"><img src="images/rose.jpeg" data-rjs="2" alt="" class=""><h4 class="text-lg">Organic Produce &amp; Clean Ingredients<br><small><a href="/learn/organic">Learn More ›</a></small></h4>
+              <ul><li><p>Ingredients are pre–measured – less hassle, less waste</p></li><li><p>Enjoy the best seasonal ingredients at their peak flavor</p></li><li><p>Discover new products and flavors that are hard to find on your own</p></li></ul></div><div class="col-sm-4"><img src="images/rose.jpeg" data-rjs="2" alt="Sun Basket box in the kitchen" class=""><h4 class="text-lg">Convenient Delivery</h4>
+              <ul><li><p>Weekly delivery to your door</p></li><li><p>Hand-selected ingredients arrive fresh in an insulated box</p></li><li><p>Packaging is recyclable and compostable</p></li></ul></div>
+                <div class="clearfix"></div>
+                <div class="row ">
+                  <div class="col-sm-12">
+                    <div class="center margin-top-lg">
+                      <a href="/meal-plans/" class="btn btn-primary btn-wide" id="" target="">View Meal Plans</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="adventures-carousel" id="farmsAnchor">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 center">
+                <h2>Adventures at <span class="MetroScript">home</span> and <span class="MetroScript">abroad</span></h2>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="carousel-container">
+                  <div id="vendor-carousel" class="carousel slide" data-ride="carousel"><!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#vendor-carousel" data-slide-to="0" class=" active"></li>
+                      <li data-target="#vendor-carousel" data-slide-to="1" class=""></li>
+                      <li data-target="#vendor-carousel" data-slide-to="2" class=""></li>
+                      <li data-target="#vendor-carousel" data-slide-to="3" class=""></li>
+                      <li data-target="#vendor-carousel" data-slide-to="4" class=""></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active"><img src="images/rose.jpeg" alt="Durst Organic Growers — Capay Valley, CA" class="slide-img-bs" data-rjs="2" style="width:100%; height:auto;">
+                        <div class="carousel-caption">
+                          <p>Durst Organic Growers — Capay Valley, CA</p>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/rose.jpeg" alt="" class="slide-img-bs" data-rjs="2" style="width:100%; height:auto;">
+                        <div class="carousel-caption">
+                          <p>Lakeside Organic Gardens — Watsonville, CA</p>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/rose.jpeg" alt="" class="slide-img-bs" data-rjs="2" style="width:100%; height:auto;">
+                        <div class="carousel-caption">
+                          <p>Port's Seafood — San Francisco, CA</p>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/rose.jpeg" alt="" class="slide-img-bs" data-rjs="2" style="width:100%; height:auto;">
+                        <div class="carousel-caption"><p>Hodo Soy — Oakland, CA</p>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/rose.jpeg" alt="" class="slide-img-bs" data-rjs="2" style="width:100%; height:auto;">
+                        <div class="carousel-caption">
+                          <p>Oaktown Spice Shop — Oakland, CA</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#vendor-carousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left icon icon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#vendor-carousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right icon icon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="about me" id="chefsAnchor">
+            <div class="chef-container">
+                <div class="chef-img">
+                </div>
+                <div class="chef-msg">
+                    <div class="container">
+                        <div class="row hidden-xs">
+                            <div class="col-lg-5 col-lg-offset-7 col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5">
+                                <h2>About <span class="MetroScript">me</span></h2>
+                                <p class="chef-description">Former head chef of the James Beard award–winning The Slanted Door restaurant, Sun Basket's Justine Kelly works closely with local farmers to bring the freshest seasonal ingredients to your kitchen.</p>
+                                <p><a href="/chef" class="btn btn-primary" id="" target="">More on Justine</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chef-description-mobile visible-xs row">
+                    <div class="col-xs-12">
+                        <h2>About <span class="MetroScript">me</span></h2>
+                        <p class="chef-description">Former head chef of the James Beard award–winning The Slanted Door restaurant, Sun Basket's Justine Kelly works closely with local farmers to bring the freshest seasonal ingredients to your kitchen.</p>
+                        <p class="center"><a href="/chef" class="" id="" target="">More on Justine</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2><span class="MetroScript">Contact me!</span></h2>
+                        <div class="center">       
+                            <a href="/join/" class="btn btn-primary btn-lg cta-link hidden-xs" id="" target="">LinkedIn!</a> 
+                            <a href="/join/" class="btn btn-primary btn-lg btn-block cta-link visible-xs" id="" target="">GitHub!</a> 
+                        </div>
+                        <p>Email me too!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </div> <!-- end #page-content  -->
+    
+      <footer>
+        <!-- show Footer HTML if not in sign up flow -->
+
+        <div class="footer-links-container"></div>
+
+      </footer>
+    </div> <!-- end .wrapper -->
+    <div class="modals-collector"></div>
+
+  </body>
+  <!-- end page. what a ride! -->
 </html>
