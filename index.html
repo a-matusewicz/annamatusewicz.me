@@ -2,14 +2,25 @@
 <!--My HTML is adapted from https://sunbasket.com/-->
 <html>
   <head>
-        <title>annamatusewicz.me</title>
-        <link rel="stylesheet" href="#">
+    <title>annamatusewicz.me</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
-  <body class="homepage">
+  <body class="cover">
 
     <header class="not-scrolled">
       <nav id="nav" class="navbar"> 
-        <div class="nav-links hidden-xs">
+        <!-- center logo for desktop -->
+        <div class="nav-links">
+          <a id="home-hero" class="navbar logo-center" href="#">
+            <div class="logo-container fancy-script">
+              Anna Matusewicz
+            </div> 
+          </a>
+        </div>
+
+        <div class="hidden-xs">
           <ul id="main-nav" class="navbar-links">
             <li id="home" class="menu-item">
               <a class="nav-tab" id="home-link" href="#">Home</a>
@@ -30,7 +41,7 @@
         </div>
   
         <!-- mobile collapsed menu items -->
-        <div class="collapse navbar-collapse" id="collapsed-nav">
+        <!-- <div class="collapse navbar-collapse" id="collapsed-nav">
           <div class="visible-xs">								
             <ul id="main-nav-mobile" class="navbar-links mobile">
               <li id="home-mobile" class="divider-bottom">
@@ -50,16 +61,7 @@
               </li>
             </ul>
           </div>
-        </div>
-  
-        <!-- center logo for desktop -->
-        <div class="nav-links">
-          <a id="home-hero" class="navbar logo-center" href="#">
-            <div class="logo-container">
-              <img src="images/rose.jpeg">
-            </div> 
-          </a>
-        </div>
+        </div> -->
       </nav>
     </header>
     
@@ -70,12 +72,10 @@
           <div class="container main">
             <div class="container">
               <div class="row">
-                <div class="col-sm-12">
-                  <h1>Welcome!</h1>
-                  <p class="subhead">This is my brand new website
-                    <span class="hidden-xs"><br>Come see what I'm up to!</span>
-                  </p>
-                </div>
+                <h1>Welcome!</h1>
+                <p class="subhead">This is my brand new website
+                  <span class="hidden-xs"><br>Come see what I'm up to!</span>
+                </p>
               </div>
             </div>
           </div>
@@ -84,14 +84,12 @@
         <section class="projects">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12">
-                <h2><span class="fancy-script">Projects</span> and such</h2>
-              </div>
+              <h2><span class="fancy-script">Projects</span> and such</h2>
             </div>
             <div class="row">
               <div id="past-projects">
                 <div class="col-sm-4">
-                  <img src="images/rose.jpeg">
+                  <!-- <img src="images/rose.jpeg"> -->
                   <h4 class="text-lg">Blick Art Materials</h4>
                   <ul>
                     <li><p>I'll fill this later</p></li>
@@ -100,7 +98,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-4">
-                  <img src="images/rose.jpeg">
+                  <!-- <img src="images/rose.jpeg"> -->
                   <h4 class="text-lg">Canvas Technology</h4>
                   <ul>
                     <li><p>I'll fill this later</p></li>
@@ -109,7 +107,7 @@
                   </ul>
                 </div>
                 <div class="col-sm-4">
-                  <img src="images/rose.jpeg">
+                  <!-- <img src="images/rose.jpeg"> -->
                   <h4 class="text-lg">Microsoft</h4>
                   <ul>
                     <li><p>I'll fill this later</p></li>
@@ -117,13 +115,11 @@
                     <li><p>Magical Haiku</p></li>
                   </ul>
                 </div>
-                <div class="row ">
-                  <div class="col-sm-12">
-                    <div class="center margin-top-lg">
-                      <a href="#" class="button" id="" target="">See more</a>
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <a href="#" class="button" id="" target="">See more</a>
               </div>
             </div>
           </div>
@@ -189,29 +185,30 @@
           </div>
         </section>
         
-        <section class="about me">
+        <section class="about-me">
             <div class="container">
                 <div class="anna-img">
                     <img src="images/me.jpeg">
                 </div>
                 <div class="anna-msg">
-                    <div class="container">
-                        <div class="row hidden-xs">
-                            <div class="col-side">
-                                <h2>About <span class="fancy-script">me</span></h2>
-                                <p class="anna-description">Seattlite and current student at Dartmouth College. Loves dogs and knitting sweaters!</p>
-                                <p><a href="#" class="button" id="" target="">More on Anna</a></p>
-                            </div>
-                        </div>
+                  <div class="container">
+                    <div class="row hidden-xs">
+                      <h2>About <span class="fancy-script">me</span></h2>
+                      <p class="anna-description">
+                        Seattlite and current student at Dartmouth College.
+                        <br>Loves dogs and knitting sweaters!
+                      </p>
+                      <p><a href="#" class="button" id="" target="">More on Anna</a></p>
                     </div>
+                  </div>
                 </div>
-                <div class="anna-description-mobile visible-xs row">
+                <!-- <div class="anna-description-mobile visible-xs row">
                     <div class="col-xs-12">
                         <h2>About <span class="fancy-script">me</span></h2>
                         <p class="anna-description">Seattlite and current student at Dartmouth College. Loves dogs and knitting sweaters!</p>
                         <p class="center"><a href="#" class="" id="" target="">More on Anna</a></p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     
