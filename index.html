@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <!--My HTML is adapted from https://sunbasket.com/-->
+<!--Content and section inspiration from http://www.zingweb.com-->
 <html>
   <head>
     <title>annamatusewicz.me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
+
   <body class="cover">
 
-    <header class="not-scrolled">
+    <header>
       <nav id="nav" class="navbar"> 
-        <!-- center logo for desktop -->
         <div class="nav-links">
-          <a id="home-hero" class="navbar logo-center" href="#">
+          <a class="navbar logo" href="#">
             <div class="logo-container fancy-script">
               Anna Matusewicz
             </div> 
@@ -39,29 +41,34 @@
             </li>
           </ul>
         </div>
-  
+        
         <!-- mobile collapsed menu items -->
-        <!-- <div class="collapse navbar-collapse" id="collapsed-nav">
-          <div class="visible-xs">								
-            <ul id="main-nav-mobile" class="navbar-links mobile">
-              <li class="divider-bottom">
-                <a class="nav-tab-mobile" id="home-link-mobile" href="#">Home</a>
-              </li>
-              <li class="divider-bottom">
-                <a class="nav-tab-mobile" id="projects-link-mobile" href="#">Projects</a>
-              </li>
-              <li class="divider-bottom">
-                <a class="nav-tab-mobile" id="travels-link-mobile" href="#">Travels</a>
-              </li>
-              <li class="divider-bottom">
-                <a class="nav-tab-mobile" id="about-me-link-mobile" href="#">About me</a>
-              </li>
-              <li class="divider-bottom">
-                <a class="nav-tab-mobile" id="contact-link-mobile" href="#">Contact</a>
-              </li>
-            </ul>
+        <div class="menu-tab visible-xs">
+          <input type="radio" id="tab" name="tab-group">
+          <label for="tab"><i class="fas fa-angle-down"></i></label>
+          <div class="tab" id="close-tab">
+            <input type="radio" id="tab-close" name="tab-group">
+            <label for="tab-close"><i class="fas fa-angle-up"></i></label>
           </div>
-        </div> -->
+  
+          <div class="content">
+            <div class="menu-item">
+              <a class="nav-tab" id="home-link" href="#home">Home</a>
+            </div>
+            <div class="menu-item">
+              <a class="nav-tab" id="projects-link" href="#projects">Projects</a>
+            </div>
+            <div class="menu-item">
+              <a class="nav-tab" id="travels-link" href="#travels">Travels</a>
+            </div>
+            <div class="menu-item">
+              <a class="nav-tab" id="about-me-link" href="#about-me">About me</a>
+            </div>
+            <div class="menu-item">
+              <a class="nav-tab" id="contact-link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     
@@ -87,16 +94,17 @@
               <h2><span class="fancy-script">Projects</span> and such</h2>
             </div>
 
-            <div id="past-projects">
+            <div class="past-projects">
 
               <!-- Adapted from CS52 CSS slides -->
               <div class="card-container">
                 <div class="card">
                   <h4 class="side">Blick Art Materials</h4>
                   <div class="side back">
-                    <p>I'll fill this later
+                    <p class="hidden-xs">I'll fill this later
                     <br>But for now I will write a
                     <br>Magical Haiku</p>
+                    <p class="visible-xs">I'll fill this later</p>
                   </div>
                 </div>
               </div>
@@ -104,9 +112,10 @@
                 <div class="card">
                   <h4 class="side">Canvas Technology</h4>
                   <div class="side back">
-                    <p>I'll fill this later
+                    <p class="hidden-xs">I'll fill this later
                     <br>But for now I will write a
                     <br>Magical Haiku</p>
+                    <p class="visible-xs">But for now I will write a</p>
                   </div>
                 </div>
               </div>
@@ -114,9 +123,10 @@
                 <div class="card">
                   <h4 class="side">Microsoft</h4>
                   <div class="side back">
-                    <p>I'll fill this later
+                    <p class="hidden-xs">I'll fill this later
                     <br>But for now I will write a
                     <br>Magical Haiku</p>
+                    <p class="visible-xs">Magical Haiku</p>
                   </div>
                 </div>
               </div>
@@ -159,7 +169,7 @@
             </div>
             <div class="anna-msg">
               <div class="container">
-                <div class="row hidden-xs">
+                <div class="row">
                   <h2>About <span class="fancy-script">me</span></h2>
                   <p class="anna-description">
                     Seattlite and current student at Dartmouth College.
@@ -169,13 +179,6 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="anna-description-mobile visible-xs row">
-              <div class="col-xs-12">
-                <h2>About <span class="fancy-script">me</span></h2>
-                <p class="anna-description">Seattlite and current student at Dartmouth College. Loves dogs and knitting sweaters!</p>
-                <p class="center"><a href="#" class="" id="" target="">More on Anna</a></p>
-              </div>
-            </div> -->
           </div>
         </section>
     
